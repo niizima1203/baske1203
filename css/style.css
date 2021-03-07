@@ -1,0 +1,463 @@
+@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+
+.title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid black;
+  width: 80px;
+  margin-left: 10px;
+}
+
+.inner {
+  width: 84%;
+  height: 600px;
+  margin: 0 auto;
+  padding: 180px 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  position: absolute;
+}
+@media (max-width: 600px) {
+  header {
+    position: static;
+  }
+}
+
+.hd-logo {
+  font-size: 38px;
+  margin-left: 60px;
+  width: 330px;
+}
+
+nav {
+  width: 45%;
+}
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 650px;
+}
+nav ul li {
+  margin-left: 20px;
+  font-size: 18px;
+}
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+.ham {
+  display: none;
+}
+@media (max-width: 600px) {
+  .ham {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid black;
+    color: black;
+  }
+}
+
+span:last-child {
+  width: 50%;
+}
+
+.first-v {
+  width: 1342px;
+  height: 800px;
+}
+
+.first-v-sp {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .first-v-sp {
+    position: relative;
+    width: 600px;
+  }
+}
+
+.first-img {
+  background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+  background-size: cover;
+  width: 54%;
+  height: 800px;
+}
+@media (max-width: 600px) {
+  .first-img {
+    width: 100%;
+  }
+}
+
+.first-item {
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  margin: 300px 0 300px 0;
+}
+@media (max-width: 600px) {
+  .first-item {
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+}
+
+.first-logo {
+  font-size: 38px;
+  font-family: "ヒラギノ明朝 Pro";
+}
+
+.first-catch {
+  font-size: 38px;
+  font-family: "Zapfino";
+  margin-top: 70px;
+}
+
+.concept-v {
+  background-color: #A193861F;
+}
+
+.concept-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+@media (max-width: 600px) {
+  .concept-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.concept-logo {
+  font-size: 40px;
+  font-family: "ヒラギノ明朝 Pro";
+  padding-right: 50px;
+}
+@media (max-width: 600px) {
+  .concept-logo {
+    margin-bottom: 20px;
+  }
+}
+
+.concept-img {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+@media (max-width: 600px) {
+  .concept-img {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .concept-img-v {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+.concept-img-v img {
+  width: 100%;
+}
+
+.menu-v {
+  padding-top: 250px;
+}
+
+.menu-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .menu-wrap {
+    flex-direction: column;
+  }
+}
+
+.menu-item {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .menu-item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.menu-item-img {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+
+img {
+  height: 100%;
+}
+
+.access-v {
+  background-color: #A193861F;
+  padding-top: 850px;
+}
+.access-v-title {
+  color: #00000038;
+  margin-bottom: 20px;
+}
+
+.access-title {
+  margin-left: 99px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+
+.access-title:after {
+  display: inline-block;
+  content: "";
+  border-top: 1px solid black;
+  width: 80px;
+  margin-left: 10px;
+}
+
+.access-wrap {
+  display: flex;
+  justify-content: center;
+  width: 1280px;
+}
+@media (max-width: 600px) {
+  .access-wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+.access-item {
+  background-color: #D0C5BA;
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .access-item {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+.access-item-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -35%);
+  height: 50%;
+}
+
+.access-i {
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 600px) {
+  iframe {
+    transform: scale(0.7593);
+    transform-origin: 0 0;
+  }
+}
+
+.reserve-v {
+  position: relative;
+}
+
+.reserve-bar:after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid #707070;
+  width: 100%;
+  height: 100px;
+}
+
+.reserve-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserve-logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+  color: #7070704D;
+  font-size: 30px;
+}
+
+.reserve-btn {
+  background-color: #FFFFFF;
+  font-size: 18px;
+  color: #707070;
+  width: 180px;
+}
+@media (max-width: 600px) {
+  .reserve-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, 30%);
+  }
+}
+
+.fab {
+  color: black;
+  padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .reserve-icon {
+    padding-left: 170px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
