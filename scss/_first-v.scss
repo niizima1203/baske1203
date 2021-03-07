@@ -1,0 +1,51 @@
+
+.first-v {
+   width: 1342px;
+   height: 800px;
+}
+.first-v-sp {
+    display: flex;
+    justify-content: center;
+    @include sp {
+        position: relative;
+        width: 600px;
+    }
+    
+}
+   
+
+.first-img {
+    background-image: url(../img/Blond\ woman\ with\ long\ curly\ beautiful\ hair.png);
+    background-size: cover;
+    width: 54%;
+    height: 800px;
+    @include sp {
+        width: 100%;
+    }
+   
+}
+
+
+.first-item {
+    width: 500px;
+    height: 250px;
+    text-align: center;
+    margin: 300px 0 300px 0;
+    @include sp {
+     position: absolute;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     flex-direction: column-reverse;
+    }
+    
+}
+.first-logo {
+    font-size: 38px;
+    font-family: "ヒラギノ明朝 Pro";
+}
+.first-catch {
+    font-size: 38px;
+    font-family: "Zapfino";
+    margin-top: 70px;
+}

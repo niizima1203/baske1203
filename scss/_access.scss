@@ -1,0 +1,64 @@
+.access-v {
+    background-color: #A193861F;
+    padding-top: 850px;
+    &-title {
+        color: #00000038;
+        margin-bottom: 20px;
+    }
+}
+.access-title {
+    margin-left: 99px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+.access-title:after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 80px;
+    margin-left: 10px;
+}
+
+.access-wrap {
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    @include sp {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+}
+
+.access-item {
+    background-color: #D0C5BA;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    @include sp {
+        width: 600px;
+        height: 300px;
+    }
+}
+
+.access-item-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -35%);
+    height: 50%;
+}
+.access-i {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+iframe {
+    @include sp {
+        transform: scale(0.7593);
+        transform-origin: 0 0;
+    }
+}
+

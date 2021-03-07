@@ -1,0 +1,30 @@
+@mixin pc {
+    @media (max-width: 1000px) {
+      @content;
+    } 
+  }
+  @mixin sp {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Roboto";
+}
+.title:after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid black;
+    width: 80px;
+    margin-left: 10px;
+}
+.inner {
+    width: 100% - 8% * 2;
+    height: 600px;
+    margin: 0 auto;
+    padding: 180px 0;
+}
